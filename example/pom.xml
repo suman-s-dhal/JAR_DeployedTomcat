@@ -123,14 +123,27 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+				
+				
 				<configuration>
+					<archive>
+					  <manifest>
+					    <addClasspath>true</addClasspath>
+					    <classpathPrefix>lib/</classpathPrefix>
+					    <mainClass>com.mypackage.MyClass</mainClass>
+					  </manifest>
+					</archive>
+				 </configuration>
+				
+				
+<!-- 	suman			<configuration>
 					<archive>
 						<manifest>
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 						</manifest>
 					</archive>
-				</configuration>
+				</configuration> -->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
