@@ -1,36 +1,13 @@
-package com.github.maven.example;
+//package com.github.maven.example;
+package com.mypackage.MyClass;
 
 /**
  * Simple wigdet class that can be enabled or disabled
  */
-public class Widget {
+public class JavaEC2 {
 
-	private boolean enabled;
-
-	/**
-	 * Create new enabled widget
-	 */
-	public Widget() {
-		enabled = true;
-	}
-
-	/**
-	 * Is the widget currently enabled?
-	 * 
-	 * @return true if enabled, false otherwise
-	 */
-	public boolean isEnabled() {
-		return enabled;
-	}
-
-	/**
-	 * Set the widget enable state
-	 * 
-	 * @param enabled
-	 * @return this widget
-	 */
-	public Widget setEnabled(boolean enabled) {
-		this.enabled = enabled;
-		return this;
+	public static void main(string[] args)
+	{
+		System.out.println(" This is JAR file deployment on EC2");
 	}
 }
